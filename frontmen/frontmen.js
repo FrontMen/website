@@ -3,8 +3,8 @@
 
 Build: 
 ----------
-Version: 0.0.1
-Timestamp: Thu Oct 02 2014 13:39:51 
+Version: 0.0.2
+Timestamp: Thu Oct 02 2014 13:44:13 
 ----------*//*!
  * viewport-units-buggyfill v0.4.1
  * @web: https://github.com/rodneyrehm/viewport-units-buggyfill/
