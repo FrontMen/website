@@ -6,8 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui" />
         <meta name="description" content="" />
         <title>FrontMen - Expert Frontend Coding</title>
+        <!-- Default ico's -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="icon" type="image/png" href="icon57.png" />
+
+        <!-- non-retina iPhone pre iOS 7 -->
+        <link rel="apple-touch-icon" href="icon57.png" sizes="57x57">
+        <!-- non-retina iPad pre iOS 7 -->
+        <link rel="apple-touch-icon" href="icon72.png" sizes="72x72">
+        <!-- non-retina iPad iOS 7 -->
+        <link rel="apple-touch-icon" href="icon76.png" sizes="76x76">
+        <!-- retina iPhone pre iOS 7 -->
+        <link rel="apple-touch-icon" href="icon114.png" sizes="114x114">
+        <!-- retina iPhone iOS 7 -->
+        <link rel="apple-touch-icon" href="icon120.png" sizes="120x120">
+        <!-- retina iPad pre iOS 7 -->
+        <link rel="apple-touch-icon" href="icon144.png" sizes="144x144">
+        <!-- retina iPad iOS 7 -->
+        <link rel="apple-touch-icon" href="icon152.png" sizes="152x152">
+
+        <!-- Win8 tile -->
+        <meta name="msapplication-TileImage" content="favicon-144.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF"/>
+        <meta name="application-name" content="name" />
+
+        <!-- IE11 tiles -->
+        <meta name="msapplication-square70x70logo" content="tile-tiny.png"/>
+        <meta name="msapplication-square150x150logo" content="tile-square.png"/>
+        <meta name="msapplication-wide310x150logo" content="tile-wide.png"/>
+        <meta name="msapplication-square310x310logo" content="tile-large.png"/>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="main.css" />
-        <script src="frontmen.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -16,151 +46,165 @@
         <!-- Add your site or application content here -->
 
         <div class="container">
-            <nav class="navbar" data-top="top: 4em;background: rgba(255,255,255, 0.0);" data-100="top: -3.2em;background: rgba(255,255,255, 0.4);">
+
+            <!-- navigation -->
+            <nav class="navbar">
                 <ul class="navbar__menu">
-                <li class="navbar__item"><a class="navbar__link" href="#home">Home</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#techniques">Technieken</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#projects">Projecten</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#customers">Klanten</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#team">Team</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#what-we-do">Wat wij doen</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="#partners">Partners</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#techniques">Technieken</a></li>
+                    <li><a href="#projects">Projecten</a></li>
+                    <li><a href="#customers">Klanten</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#what-we-do">Wat wij doen</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#partners">Partners</a></li>
                 </ul>
             </nav>
+            <!--// navigation -->
+
+            <!-- section: intro -->
             <header class="page home page--pattern" id="home">
                 <h1>Frontmen - Expert Frontend coding</h1>
+
+                <span class="scroll-down">scroll down</span>
             </header>
+            <!--// section: intro -->
 
+            <!-- section: we love javascript -->
             <section class="page about page--pattern-inverse" id="about">
-                    <h1 class="heading--giant heading--love">We <span class="icon icon-love"></span> JavaScript </h1>
+                <h1 class="heading--giant heading--love">We <span class="icon icon-love"></span> JavaScript </h1>
 
-                    <div class="devices">
-                        <div class='device ipad'>
-                            <div class='body'><span class="button"></span></div>
-                        </div>
-                        <div class='device iphone'>
-                            <div class='body'><span class="button"></span></div>
-                        </div>
-                        <div class='device mac'>
-                            <div class='body'></div>
-                            <span class="bottom"></span>
-                            <span class="foot"></span>
-                        </div>
-                        <div class='device macbook'>
-                            <div class='body'></div>
-                        </div>
+                <div class="devices">
+                    <div class='device ipad'>
+                        <div class='body'><span class="button"></span></div>
                     </div>
+                    <div class='device iphone'>
+                        <div class='body'><span class="button"></span></div>
+                    </div>
+                    <div class='device mac'>
+                        <div class='body'></div>
+                        <span class="bottom"></span>
+                        <span class="foot"></span>
+                    </div>
+                    <div class='device macbook'>
+                        <div class='body'></div>
+                    </div>
+                </div>
             </section>
+            <!--// section: we love javascript -->
 
-            <section class="page techniek" id="techniques">
-                    <h1 class="heading--giant heading--techniek">Techniek als basis</h1>
-                    <p class="text__block">
-                        Het is onze ambitie om (mobile) websites en apps te bouwen die verbazen. Om dit te bereiken denken we goed na over interactie, frontend architectuur en code. Hierbij ligt de focus dus op techniek als basis voor een optimale gebruikerservaring.
-                    </p>
+            <!-- section: technology -->
+            <section class="page technology" id="technology">
+                <h1 class="heading--giant heading--technology">Techniek als basis</h1>
+                <p class="text__block">
+                    Het is onze ambitie om (mobile) websites en apps te bouwen die verbazen. Om dit te bereiken denken we goed na over interactie, frontend architectuur en code. Hierbij ligt de focus dus op techniek als basis voor een optimale gebruikerservaring.
+                </p>
 
-                    <article class="logo__block">
-                        <ul>
-                            <li><a href="#"><img src="images/techicons/techicon_1.png"><span>Advanced javascript</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_2.png"><span>HTML 5</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_3.png"><span>Hybrid App Development</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_4.png"><span>Native Android</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_5.png"><span>Native IOS / Objective C</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_6.png"><span>CSS 3</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_7.png"><span>BackboneJS</span></a></li>
-                            <li><a href="#"><img src="images/techicons/techicon_8.png"><span>AngularJS</span></a></li>
-                        </ul>
-                    </article>
+                <article class="logo__block">
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en/learn/javascript"><img src="images/techicons/techicon_1.png"><span>Advanced javascript</span></a></li>
+                        <li><a href="http://www.w3.org/TR/html5/"><img src="images/techicons/techicon_2.png"><span>HTML 5</span></a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Multiple_phone_web-based_application_framework"><img src="images/techicons/techicon_3.png"><span>Hybrid App Development</span></a></li>
+                        <li><a href="https://developer.android.com/tools/sdk/ndk/index.html"><img src="images/techicons/techicon_4.png"><span>Native Android</span></a></li>
+                        <li><a href="https://developer.apple.com/technologies/ios/"><img src="images/techicons/techicon_5.png"><span>Native IOS / Objective C</span></a></li>
+                        <li><a href="http://www.w3.org/Style/CSS/current-work.en.html"><img src="images/techicons/techicon_6.png"><span>CSS 3</span></a></li>
+                        <li><a href="http://backbonejs.org/"><img src="images/techicons/techicon_7.png"><span>BackboneJS</span></a></li>
+                        <li><a href="https://angularjs.org"><img src="images/techicons/techicon_8.png"><span>AngularJS</span></a></li>
+                    </ul>
+                </article>
 
-                    <h1 class="heading--giant">Voor projecten die zichtbaar zijn</h1>
-                    <p class="text__block">
-                        Groot en klein.
-                        <br>
-                        Wij werken voor bekende merken en namen, concept- en internetontwikkelaars, softwarehuizen maar ook
-                        communicatie-/reclamebureaus en kleinere organisaties. Maar altijd binnen projecten met de ambitie een (mobile) website of app te realiseren die er toe doet.
-                    </p>
+                <h1 class="heading--giant heading--projects" id="projects">Voor projecten die zichtbaar zijn</h1>
+                <p class="text__block">
+                    Groot en klein.
+                </p>
+                <p class="text__block">
+                    Wij werken voor bekende merken en namen, concept- en internetontwikkelaars, softwarehuizen maar ook
+                    communicatie-/reclamebureaus en kleinere organisaties. Maar altijd binnen projecten met de ambitie een (mobile) website of app te realiseren die er toe doet.
+                </p>
 
-                    <section class="portfolio_customers" id="customers">
-                        <ul>
-                            <li id="client-rabobank">
-                                <div class="circle-container">
-                                    <div class="small-circle selected"></div>
-                                </div>
-                                <span>Rabobank beleggen app</span>
-                                <div>
-                                    <img src="images/client_bars.png" class="clientbar">
-                                </div>
-                            </li>
-                            <li id="client-malmberg">
-                                <div class="circle-container">
-                                    <div class="small-circle"></div>
-                                </div>
-                                <span>Malmberg</span>
-                                <div>
-                                    <img src="images/client_bars.png" class="clientbar">
-                                </div>
-                            </li>
-                            <li id="client-efteling">
-                                <div class="circle-container">
-                                    <div class="small-circle"></div>
-                                </div>
-                                <span>Efteling app</span>
-                                <div>
-                                    <img src="images/client_bars.png" class="clientbar">
-                                </div>
-                            </li>
-                            <li id="client-wehkamp">
-                                <div class="circle-container">
-                                    <div class="small-circle"></div>
-                                </div>
-                                <span>Wehkamp</span>
-                                <div>
-                                    <img src="images/client_bars.png" class="clientbar">
-                                </div>
-                            </li>
-                            <li id="client-klm">
-                                <div class="circle-container">
-                                    <div class="small-circle"></div>
-                                </div>
-                                <span>KLM</span>
-                                <div>
-                                    <img src="images/client_bars.png" class="clientbar">
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-
+                <section class="portfolio_customers" id="customers">
+                    <ul>
+                        <li id="client-rabobank">
+                            <div class="circle-container">
+                                <div class="small-circle selected"></div>
+                            </div>
+                            <span>Rabobank beleggen app</span>
+                            <div>
+                                <img src="images/client_bars.png" class="clientbar">
+                            </div>
+                        </li>
+                        <li id="client-malmberg">
+                            <div class="circle-container">
+                                <div class="small-circle"></div>
+                            </div>
+                            <span>Malmberg</span>
+                            <div>
+                                <img src="images/client_bars.png" class="clientbar">
+                            </div>
+                        </li>
+                        <li id="client-efteling">
+                            <div class="circle-container">
+                                <div class="small-circle"></div>
+                            </div>
+                            <span>Efteling app</span>
+                            <div>
+                                <img src="images/client_bars.png" class="clientbar">
+                            </div>
+                        </li>
+                        <li id="client-wehkamp">
+                            <div class="circle-container">
+                                <div class="small-circle"></div>
+                            </div>
+                            <span>Wehkamp</span>
+                            <div>
+                                <img src="images/client_bars.png" class="clientbar">
+                            </div>
+                        </li>
+                        <li id="client-klm">
+                            <div class="circle-container">
+                                <div class="small-circle"></div>
+                            </div>
+                            <span>KLM</span>
+                            <div>
+                                <img src="images/client_bars.png" class="clientbar">
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </section>
+            <!--// section: technology -->
+
+            <!-- section: portfolio -->
             <section class="page portfolio__slide">
-                <article class="portfolio__info" id="client-rabobank">
+                <article class="portfolio__info" id="slide-rabobank">
                     <div class="title">
                         <h2>Rabobank</h2>
                         <h1 class="heading--giant">Rabobank beleggen app</h1>
                     </div>
                     <div class="line"></div>
                 </article>
-                <article class="portfolio__info" id="client-malmberg">
+                <article class="portfolio__info" id="slide-malmberg">
                     <div class="title">
                         <h2>Malmberg</h2>
                         <h1 class="heading--giant">Malmberg</h1>
                     </div>
                     <div class="line"></div>
                 </article>
-                <article class="portfolio__info" id="client-efteling">
+                <article class="portfolio__info" id="slide-efteling">
                     <div class="title">
                         <h2>Efteling</h2>
                         <h1 class="heading--giant">Efteling</h1>
                     </div>
                     <div class="line"></div>
                 </article>
-                <article class="portfolio__info" id="client-wehkamp">
+                <article class="portfolio__info" id="slide-wehkamp">
                     <div class="title">
                         <h2>Wehkamp</h2>
                         <h1 class="heading--giant">Wehkamp</h1>
                     </div>
                     <div class="line"></div>
                 </article>
-                <article class="portfolio__info" id="client-klm">
+                <article class="portfolio__info" id="slide-klm">
                     <div class="title">
                         <h2>KLM</h2>
                         <h1 class="heading--giant">KLM</h1>
@@ -168,17 +212,24 @@
                     <div class="line"></div>
                 </article>
             </section>
+            <!--// section: portfolio -->
+
+            <!-- section: customers -->
             <section class="page portfolio_customers--expand">
-                <article id="client-rabobank">1</article>
-                <article id="client-malmberg">2</article>
-                <article id="client-efteling">3</article>
-                <article id="client-wehkamp">4</article>
-                <article id="client-klm">5</article>
+                <article id="slide-rabobank-article">1</article>
+                <article id="slide-malmberg-article">2</article>
+                <article id="slide-efteling-article">3</article>
+                <article id="slide-wehkamp-article">4</article>
+                <article id="slide-klm-article">5</article>
             </section>
+            <!--// section: customers -->
+
+
+            <!-- section: team -->
             <section class="page team page--pattern-inverse" id="team">
                 <h2>Ons team</h2>
                 <article>
-                    <!-- <section class="team_list">
+                    <section class="team_list">
                         <div class="team__row row1">
                             <ul>
                                 <li class="person person--standing bob" id="bob">
@@ -226,18 +277,25 @@
                             </ul>
                         </div>
 
-                    </section> -->
+                    </section>
+
                     <div class="description">
-                        <p>We zijn een hecht team aan het opbouwen van enthousiaste specialisten.<br />
-                            Ervaren professionals met liefde voor het applicatie development vakgebied van morgen.</p>
-                        <p>Werken bij FrontMen is onderdeel uitmaken van een cultuur op basis van vertrouwen en fun, geen regeltjes maar vrijheid.<br />
+                        <p>
+                            We zijn een hecht team aan het opbouwen van enthousiaste specialisten.<br />
+                            Ervaren professionals met liefde voor het applicatie development vakgebied van morgen.
+                        </p>
+                        <p>
+                            Werken bij FrontMen is onderdeel uitmaken van een cultuur op basis van vertrouwen en fun, geen regeltjes maar vrijheid.<br />
                             De dingen doen die we samen belangrijk vinden. En dat onder uitstekende voorwaarden.<br />
-                            Klinkt wat we doen en hoe we werken interessant? Voor een kop koffie of lunch maken we altijd tijd.</p>
+                            Klinkt wat we doen en hoe we werken interessant? Voor een kop koffie of lunch maken we altijd tijd.
+                        </p>
                     </div>
                 </article>
 
             </section>
+            <!--// section: team -->
 
+            <!-- section: what-we-do -->
             <div class="background_wrapper" data-2500="background-position:0px 0px" data-3200="background-position:0px -450px">
                 <section class="page what-we-do" id="what-we-do">
                     <article>
@@ -261,29 +319,40 @@
 
                         </div>
                         <section class="description">
-                            <p>Nu data en services vanuit de cloud eenvoudig bereikbaar zijn, verschuift de complexiteit.<br />
+                            <p>
+                                Nu data en services vanuit de cloud eenvoudig bereikbaar zijn, verschuift de complexiteit.<br />
                                 Of het Nu gaat om (mobile) web of app: door de groei van devices, mogelijkheden en verwachtingen van ligt de<br />
-                                uitdaging bij de frontend.</p>
-                            <p>Een goed werkende (mobile) site of app wordt mogelijk gemaakt door goede code. Waarbij echt is nagedacht over interactie en frontend architectuur.<br/>
-                                Zo ontstaan perfecte applicaties voor platformen van vandaag en die van morgen.</p>
-                            <p>Wij werken met top-professionals op het gebied van front-end &amp; app development.<br />
-                            Specialisten die op de opdrachtgever en gebruiker van de applicatie willen verrassen<br />
-                            En altijd met de laatste techniek en inzichten in het achterhoofd</p>
+                                uitdaging bij de frontend.
+                            </p>
+                            <p>
+                                Een goed werkende (mobile) site of app wordt mogelijk gemaakt door goede code. Waarbij echt is nagedacht over interactie en frontend architectuur.<br/>
+                                Zo ontstaan perfecte applicaties voor platformen van vandaag en die van morgen.
+                            </p>
+                            <p>
+                                Wij werken met top-professionals op het gebied van front-end &amp; app development.<br />
+                                Specialisten die op de opdrachtgever en gebruiker van de applicatie willen verrassen<br />
+                                En altijd met de laatste techniek en inzichten in het achterhoofd
+                            </p>
                         </section>
                     </article>
                 </section>
 
-                <section class="page partners">
+                <!-- section:partners -->
+                <section class="page partners" id="partners">
                     <h2>Onze partners</h2>
                     <section class="partners">
-                        <img src="../images/partners/fronteers.png" alt="Fronteers" />
-                        <img src="../images/partners/google_developers.png" alt="Google Developers" />
-                        <img src="../images/partners/nl_jug.png" alt="nl.jug" />
-                        <img src="../images/partners/angular.png" alt="Angular JS" />
+                        <img src="images/partners/fronteers.png" alt="Fronteers" />
+                        <img src="images/partners/google_developers.png" alt="Google Developers" />
+                        <img src="images/partners/nl_jug.png" alt="nl.jug" />
+                        <img src="images/partners/angular.png" alt="Angular JS" />
                     </section>
                 </section>
-            </div>
+                <!--// section:partners -->
 
+            </div>
+            <!--// section: what-we-do -->
+
+            <!-- section:contact -->
             <section class="page contact" id="contact">
                 <h2>Contact</h2>
                 <div class="address">
@@ -292,14 +361,16 @@
                 </div>
                 <div class="google-canvas" id="google-canvas"></div>
             </section>
+            <!--// section:contact -->
 
+            <!-- section:events -->
             <section class="page events-ads" id="events-ads">
                 <article class="ads">
                     <h2>Ads</h2>
                     <p>Werken bij FrontMen is onderdeel uitmaken van een cultuur op basis van vertrouwen en fun, geen regeltjes maar vrijheid. De dingen doen die we samen belangrijk vinden. En dat onder uitstekende voorwaarden. Klinkt wat we doen en hoe we werken interessant? Voor een kop koffie of lunch maken we altijd tijd.</p>
                     <div class="linkedin-button">
                         <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                          api_key: i3tsnrxadpra
+                            api_key: i3tsnrxadpra
                         </script>
                         <script type="IN/Apply" data-companyid="2919368" data-jobtitle="Frontend Developer" data-email="robert.kievits@gmail.com"></script>
                     </div>
@@ -332,7 +403,9 @@
                     <ul class="event-list" id="event-list"></ul>
                 </article>
             </section>
+            <!--// section:events -->
 
+            <!-- section:events contact form -->
             <section class="events-contact-form" id="events-contact-form">
                 <h2>Join Event</h2>
                 <div class="event-header">
@@ -370,32 +443,32 @@
                 </div>
                 <br class="clrflt" />
             </section>
+            <!--// section:events contact form -->
 
+            <!-- section:footer -->
             <footer class="footernav">
                 <nav>
-                    <ul class="navbar__menu">
-                        <li class="navbar__item"><a class="navbar__link" href="#home">Home</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#techniques">Technieken</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#projects">Projecten</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#customers">Klanten</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#team">Team</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#what-we-do">Wat wij doen</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
-                        <li class="navbar__item"><a class="navbar__link" href="#partners">Partners</a></li>
-                        <li class="navbar__item">COPYRIGHT BY FRONTMEN.NL 2014. ALL RIGHTS RESERVED</li>
+                    <ul>
+                        <li><a class="navbar__link" href="#home">Home</a></li>
+                        <li><a class="navbar__link" href="#techniques">Technieken</a></li>
+                        <li><a class="navbar__link" href="#projects">Projecten</a></li>
+                        <li><a class="navbar__link" href="#customers">Klanten</a></li>
+                        <li><a class="navbar__link" href="#team">Team</a></li>
+                        <li><a class="navbar__link" href="#what-we-do">Wat wij doen</a></li>
+                        <li><a class="navbar__link" href="#contact">Contact</a></li>
+                        <li><a class="navbar__link" href="#partners">Partners</a></li>
                     </ul>
                 </nav>
+                <span class="copyright">&#169; 2014 FrontMen B.V. All rights reserved</span>
+
             </footer>
+            <!--// section:footer -->
+
         </div>
 
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/vendor/skrollr/src/skrollr.js"></script>
+        <!--<script src="js/vendor/skrollr/src/skrollr.js"></script>-->
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/calendar.js"></script>
-        <script src="js/main.js"></script>
+        <script src="frontmen.min.js"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
