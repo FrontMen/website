@@ -3,8 +3,8 @@
 
 Build: 
 ----------
-Version: 0.0.19
-Timestamp: Fri Nov 14 2014 16:33:33 
+Version: 0.0.21
+Timestamp: Mon Nov 17 2014 06:58:30 
 ----------*//*!
  * Modernizr v2.8.3
  * www.modernizr.com
@@ -2181,9 +2181,37 @@ $(function () {
     }
 
     function initSectionNav() {
-        var slides = document.querySelector('.page');
+        var homeSlides = document.querySelector('#home'),
+            slides = document.querySelectorAll('.page'),
+            $numberOfSlides = parseInt(slides.length),
+            activeSlide = 1;
 
+        console.log(homeSlides);
 
+        homeSlides.waypoint(function(direction) {
+            if (direction === 'down') {
+                var index = this.index();
+                var index = index+1;
+                $activeSlide.text(index);
+                showHideNavItems();
+            }
+        }, { offset: '50%' });
+
+        // Highlight current section while scrolling UP
+        homeSlides.waypoint(function(direction) {
+            if (direction === 'up') {
+                var index = this.index();
+                var index = index+1;
+                $activeSlide.text(index);
+                showHideNavItems();
+            }
+        }, {
+            offset: function() {
+                // This is the calculation that would give you
+                // "bottom of element hits middle of window"
+                return $.waypoints('viewportHeight') / 2 - $(this).outerHeight();
+            }
+        });
 
     }
 
