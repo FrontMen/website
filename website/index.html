@@ -43,7 +43,7 @@
     </head>
     <body>
 
-        <div id="skrollr-body" class="content-wrapper">
+        <main role="main" id="skrollr-body" class="content-wrapper">
 
             <!-- section: intro -->
             <header class="page home page--pattern" id="home">
@@ -102,7 +102,7 @@
                     </article>
 
                 </article>
-
+<!--
                 <article id="projects">
                     <h1 class="heading--giant heading--projects">Voor projecten die zichtbaar zijn</h1>
                     <p class="text__block">
@@ -113,6 +113,7 @@
                         communicatie-/reclamebureaus en kleinere organisaties. Maar altijd binnen projecten met de ambitie een (mobile) website of app te realiseren die er toe doet.
                     </p>
                 </article>
+                -->
 
                 <!--
                 <section class="portfolio_customers" id="customers">
@@ -169,9 +170,26 @@
             </section>
             <!--// section: technology -->
 
-            <!-- section: portfolio -->
-            <!--
+            <!-- section: portfolio
             <section class="page portfolio__slide">
+                <ul class="cards">
+                    <li
+                        data-1200="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, 0px, 340px)"
+                        data-2000="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, 0px, 0px)"
+                        class="card"><input type="radio" name="portfolio-item" id="portfolio_rabo"/><label for="portfolio_rabo"></label></li>
+                    <li  data-1200="transform: rotate3d(0.2, 1, 0.1, 60deg) translate3d(24px, -30px, 145px);"
+                         data-2000="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, 0px, 0px)"
+                         class="card"><input type="radio" name="portfolio-item"/></li>
+                    <li data-1200="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, -45px, -20px)"
+                        data-2000="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, 0px, 0px)"
+                        class="card"><input type="radio" name="portfolio-item"/></li>
+                    <li data-1200="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, -68px,-200px)"
+                        data-2000="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, 0px, 0px)"
+                        class="card"><input type="radio" name="portfolio-item"/></li>
+                    <li data-1200="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, -90px, -380px)"
+                        data-2000="transform: rotate3d(.2, 1, .1, 60deg) translate3d(0, 0px, 0px)"
+                        class="card"><input type="radio" name="portfolio-item"/></li>
+                </ul>
                 <article class="portfolio__info" id="slide-rabobank">
                     <div class="title">
                         <h2>Rabobank</h2>
@@ -208,7 +226,6 @@
                     <div class="line"></div>
                 </article>
             </section>
-            -->
             <!--// section: portfolio -->
 
             <!-- section: customers -->
@@ -225,9 +242,9 @@
 
             <!-- section: team -->
             <section class="page team page--pattern-inverse" id="team">
-                <article>
-                    <h2>Ons team</h2>
-                    <section class="team_list">
+                <div class="team-wrapper">
+                    <h2 class="heading--team">Ons team</h2>
+                    <div class="team_list">
                         <ul class="team__row row1">
                             <li class="person person--standing remco" id="remco">
                                 <p class="selected-person"></p>
@@ -298,7 +315,7 @@
                             <li class="person person--sitting you" id="you">
                             </li>
                         </ul>
-                    </section>
+                    </div>
 
                     <div class="description">
                         <p>
@@ -311,8 +328,7 @@
                             Klinkt wat we doen en hoe we werken interessant? Voor een kop koffie of lunch maken we altijd tijd.
                         </p>
                     </div>
-                </article>
-
+                </div>
             </section>
             <!--// section: team -->
 
@@ -321,43 +337,40 @@
 
                 <!-- section: what-we-do -->
                 <section class="page what-we-do" id="what-we-do">
-                    <article>
-                        <h2>Wat we doen</h2>
-                        <div class="ipad-wrapper">
-                            <div  class="ipad-animation">
-                                <div class="ipad-layer layer-1" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 90px);box-shadow:3px 3px 50px #333;">Insert Code here
-                                    <p> App of Web applicatie</p>
-                                </div>
-                                <div class="ipad-layer layer-2" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 60px);box-shadow:3px 3px 50px #333;">
-                                    <p>Frontend architectuur</p>
-                                </div>
-                                <div class="ipad-layer layer-3" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 30px);box-shadow:3px 3px 50px #333;">
-                                    <p>Expert code</p>
-                                </div>
-                                <div class="ipad-layer layer-4" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 25px);box-shadow:3px 3px 50px #333;"></div>
-                                <div class="ipad-base-layer">
-                                    <div class="ipad-button"></div>
-                                </div>
+                    <h2>Wat we doen</h2>
+                    <div class="ipad-wrapper">
+                        <div  class="ipad-animation">
+                            <div class="ipad-layer layer-1" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 90px);box-shadow:3px 3px 50px #333;">Insert Code here
+                                <p> App of Web applicatie</p>
                             </div>
-
+                            <div class="ipad-layer layer-2" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 60px);box-shadow:3px 3px 50px #333;">
+                                <p>Frontend architectuur</p>
+                            </div>
+                            <div class="ipad-layer layer-3" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 30px);box-shadow:3px 3px 50px #333;">
+                                <p>Expert code</p>
+                            </div>
+                            <div class="ipad-layer layer-4" data-anchor-target="#what-we-do" data-200-top-top="transform:translate3d(0px, 0px, 0px);box-shadow:0px 0px 0px #333;" data--50-top-top="transform:translate3d(0px 0px, 25px);box-shadow:3px 3px 50px #333;"></div>
+                            <div class="ipad-base-layer">
+                                <div class="ipad-button"></div>
+                            </div>
                         </div>
-                        <section class="description">
-                            <p>
-                                Nu data en services vanuit de cloud eenvoudig bereikbaar zijn, verschuift de complexiteit.<br />
-                                Of het Nu gaat om (mobile) web of app: door de groei van devices, mogelijkheden en verwachtingen van ligt de<br />
-                                uitdaging bij de frontend.
-                            </p>
-                            <p>
-                                Een goed werkende (mobile) site of app wordt mogelijk gemaakt door goede code. Waarbij echt is nagedacht over interactie en frontend architectuur.<br/>
-                                Zo ontstaan perfecte applicaties voor platformen van vandaag en die van morgen.
-                            </p>
-                            <p>
-                                Wij werken met top-professionals op het gebied van front-end &amp; app development.<br />
-                                Specialisten die op de opdrachtgever en gebruiker van de applicatie willen verrassen<br />
-                                En altijd met de laatste techniek en inzichten in het achterhoofd
-                            </p>
-                        </section>
-                    </article>
+                    </div>
+                    <div class="description">
+                        <p>
+                            Nu data en services vanuit de cloud eenvoudig bereikbaar zijn, verschuift de complexiteit.<br />
+                            Of het Nu gaat om (mobile) web of app: door de groei van devices, mogelijkheden en verwachtingen van ligt de<br />
+                            uitdaging bij de frontend.
+                        </p>
+                        <p>
+                            Een goed werkende (mobile) site of app wordt mogelijk gemaakt door goede code. Waarbij echt is nagedacht over interactie en frontend architectuur.<br/>
+                            Zo ontstaan perfecte applicaties voor platformen van vandaag en die van morgen.
+                        </p>
+                        <p>
+                            Wij werken met top-professionals op het gebied van front-end &amp; app development.<br />
+                            Specialisten die op de opdrachtgever en gebruiker van de applicatie willen verrassen<br />
+                            En altijd met de laatste techniek en inzichten in het achterhoofd
+                        </p>
+                    </div>
                 </section>
                 <!--// section: what-we-do -->
 
@@ -448,7 +461,7 @@
                     </div>
                 </div>
 
-                <div class="contact-form">
+                <div role="form" class="contact-form">
                     <div class="input">
                         <span>First Name</span>
                         <input id="firstName" name="firstName" placeholder="First Name" />
@@ -467,13 +480,12 @@
                     </div>
                     <a href="javascript:void(0);" class="apply" id="event-apply">APPLY</a>
                 </div>
-                <br class="clrflt" />
             </section>
             <!--// section:events contact form -->
 
             <!-- section:footer -->
             <footer class="footernav">
-                <nav>
+                <nav role="navigation">
                     <ul>
                         <li><a class="section1 active" href="#home">Home</a></li>
                         <li><a class="section2" href="#technology">Technieken</a></li>
@@ -490,7 +502,7 @@
             </footer>
             <!--// section:footer -->
 
-        </div>
+        </main>
 
         <!-- navigation -->
         <nav class="navbar" data-0="top: 2.5rem; background: rgba(255,255,255, 0.0);" data-100="top: -4.3rem; background: rgba(255,255,255, 0.4);">
