@@ -3,8 +3,8 @@
 
 Build: 
 ----------
-Version: 0.0.26
-Timestamp: Thu Nov 20 2014 20:19:11 
+Version: 1.0.1
+Timestamp: Thu Nov 20 2014 20:27:27 
 ----------*//*!
  * Modernizr v2.8.3
  * www.modernizr.com
