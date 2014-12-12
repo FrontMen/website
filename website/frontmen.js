@@ -3,8 +3,8 @@
 
 Build: 
 ----------
-Version: 1.0.1
-Timestamp: Thu Nov 20 2014 20:27:27 
+Version: 1.0.2
+Timestamp: Fri Dec 12 2014 06:45:38 
 ----------*//*!
  * Modernizr v2.8.3
  * www.modernizr.com
@@ -1994,24 +1994,13 @@ $(function () {
     var detectOS = function () {
         var matches, ua = navigator.userAgent;
 
-        // For specially crafted UA-strings (by the Cordova part)
-        var matchSpecial = /^Rabo Beleggen App, .*?, (Android|iPhone OS), .*?, ((\d)(\.\d+)*)$/i.exec(ua);
-        if (matchSpecial) {
-            return {
-                os: /^android$/i.exec(matchSpecial[1]) ? 'android' : 'ios',
-                osVersion: matchSpecial[3]
-            };
-        }
-
         // iOS detection
         matches = /(ipad|iphone|ipod)(; CPU)? OS (\d+)/i.exec(ua);
         if (matches) {
             return {os: 'ios', osVersion: matches[3]};
         }
-        // iOS detection in Cordova
-        // Rabo Beleggen App, 1.1.1, iPhone OS, iPhone Simulator, 7.0.3  (173506128)
+        // iOS detection
         matches = /(ipad|iphone|ipod) OS, .*, (\d+)/i.exec(ua);
-
         if (matches) {
             return {os: 'ios', osVersion: matches[2]};
         }
